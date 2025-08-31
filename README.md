@@ -21,6 +21,18 @@ If you want to work locally using your own IDE, you can clone this repo and push
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
+## Environment Setup
+
+1. Copy the environment template:
+```bash
+cp .env.example .env
+```
+
+2. Add your OpenAI API key to `.env`:
+```
+VITE_OPENAI_API_KEY="sk-your-openai-api-key-here"
+```
+
 Follow these steps:
 
 ```sh
