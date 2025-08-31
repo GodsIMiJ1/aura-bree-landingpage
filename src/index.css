@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* AURA-BREE Design System - Sovereign Healthcare Revolution */
+
+@layer base {
+  :root {
+    /* Core dark theme with cyberpunk medical aesthetic */
+    --background: 220 13% 5%;
+    --foreground: 0 0% 98%;
+    
+    /* Cards and surfaces */
+    --card: 220 13% 8%;
+    --card-foreground: 0 0% 95%;
+    
+    /* Overlays and popovers */
+    --popover: 220 13% 6%;
+    --popover-foreground: 0 0% 98%;
+    
+    /* Sovereign green branding */
+    --primary: 120 100% 50%;  /* Electric green #00ff00 */
+    --primary-foreground: 220 13% 5%;
+    --primary-glow: 120 100% 60%;
+    
+    /* Secondary medical blue */
+    --secondary: 200 80% 20%;
+    --secondary-foreground: 0 0% 98%;
+    
+    /* Muted backgrounds */
+    --muted: 220 13% 12%;
+    --muted-foreground: 0 0% 65%;
+    
+    /* Accent clinical blue */
+    --accent: 200 100% 40%;
+    --accent-foreground: 0 0% 98%;
+    
+    /* Critical/emergency red */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    /* Borders and inputs */
+    --border: 220 13% 15%;
+    --input: 220 13% 10%;
+    --ring: 120 100% 50%;
+    
+    /* Radius for modern feel */
+    --radius: 0.75rem;
+    
+    /* Gradient definitions */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hsl(220 13% 8%));
+    --gradient-sovereign: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-medical: linear-gradient(135deg, hsl(var(--accent)), hsl(200 100% 60%));
+    --gradient-dark: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+    
+    /* Shadows with green glow */
+    --shadow-sovereign: 0 0 40px hsl(var(--primary) / 0.3);
+    --shadow-elegant: 0 20px 60px -10px hsl(220 13% 5% / 0.8);
+    --shadow-glow: 0 0 20px hsl(var(--primary) / 0.5);
+    
+    /* Animation variables */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: all 0.3s ease-out;
+    
+    /* Typography */
+    --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+/* Custom utility classes for AURA-BREE */
+@layer utilities {
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-sovereign {
+    background: var(--gradient-sovereign);
+  }
+  
+  .gradient-medical {
+    background: var(--gradient-medical);
+  }
+  
+  .gradient-dark {
+    background: var(--gradient-dark);
+  }
+  
+  .shadow-sovereign {
+    box-shadow: var(--shadow-sovereign);
+  }
+  
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-glow {
+    transition: var(--transition-glow);
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 20px hsl(var(--primary) / 0.6);
+  }
+  
+  .border-glow {
+    border-color: hsl(var(--primary));
+    box-shadow: 0 0 10px hsl(var(--primary) / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
