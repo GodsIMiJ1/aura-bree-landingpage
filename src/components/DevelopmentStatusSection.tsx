@@ -8,25 +8,25 @@ export function DevelopmentStatusSection() {
       title: "Public Beta PWA",
       description: "Fully functional patient companion app",
       action: "Try Now",
-      link: "https://sovereign-aura-bree-aga.netlify.app/"
+      link: "https://aura-bree.quantum-odyssey.com/"
     },
     {
-      title: "MethaClinic Platform", 
+      title: "MethaClinic Platform",
       description: "Complete clinic management interface",
-      action: "Pilot Ready",
-      link: "#"
+      action: "Try Now",
+      link: "https://methaclinic.quantum-odyssey.com/"
     },
     {
-      title: "Security Implementation",
-      description: "Production-grade encryption and audit trails",
-      action: "Deployed",
-      link: "#"
+      title: "Clinical Documentation",
+      description: "Complete medical protocols and procedures",
+      action: "View Docs",
+      link: "https://clinical-canon.quantum-odyssey.com/"
     },
     {
-      title: "Training Documentation",
-      description: "Complete implementation and usage guides",
-      action: "Available",
-      link: "#"
+      title: "Legal & Compliance Hub",
+      description: "Privacy policies and regulatory documentation",
+      action: "View Legal",
+      link: "https://aura-bree-legal-hub.quantum-odyssey.com/"
     },
     {
       title: "Clinic Deployment Stack",

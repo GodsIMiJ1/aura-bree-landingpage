@@ -283,22 +283,31 @@ export function RoadmapSection() {
             </Button>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
+              <Button
                 variant="outline"
                 size="lg"
-                onClick={() => window.open('https://sovereign-aura-bree-aga.netlify.app/', '_blank')}
+                onClick={() => window.open('https://aura-bree.quantum-odyssey.com/', '_blank')}
                 className="border-primary/40 text-primary hover:bg-primary/10"
               >
-                Beta AURA-BREE
+                AURA-BREE Client App
               </Button>
-              
-              <Button 
+
+              <Button
                 variant="outline"
                 size="lg"
-                onClick={() => window.open('https://aura-bree-mobile.netlify.app/', '_blank')}
+                onClick={() => window.open('https://methaclinic.quantum-odyssey.com/', '_blank')}
                 className="border-primary/40 text-primary hover:bg-primary/10"
               >
-                Beta SaaS AURA-BREE
+                MethaClinic Dashboard
+              </Button>
+
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={() => window.open('https://clinical-canon.quantum-odyssey.com/', '_blank')}
+                className="border-primary/40 text-primary hover:bg-primary/10"
+              >
+                Clinical Documentation
               </Button>
             </div>
           </div>

@@ -9,15 +9,15 @@ export function TechnologyDemoSection() {
       title: "Live Beta PWA",
       description: "Functional AURA-BREE companion app - try it now",
       status: "Live",
-      link: "https://sovereign-aura-bree-aga.netlify.app/",
+      link: "https://aura-bree.quantum-odyssey.com/",
       features: ["Local-first operation", "Clinic network detection", "Privacy mode", "Audit logging"]
     },
     {
       icon: Smartphone,
       title: "MethaClinic Dashboard",
       description: "Complete clinic management interface preview",
-      status: "Ready",
-      link: "#",
+      status: "Live",
+      link: "https://methaclinic.quantum-odyssey.com/",
       features: ["Check-in workflows", "Compliance reporting", "Staff training", "Data exports"]
     },
     {
@@ -128,13 +128,22 @@ export function TechnologyDemoSection() {
             </div>
           </div>
           
-          <Button 
-            variant="default" 
-            size="lg"
-            onClick={() => window.location.href = 'mailto:james@godsimij-ai-solutions.com?subject=Technical Documentation Request'}
-          >
-            Request Technical Documentation
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              variant="default"
+              size="lg"
+              onClick={() => window.open('https://clinical-canon.quantum-odyssey.com/', '_blank')}
+            >
+              View Clinical Documentation
+            </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              onClick={() => window.location.href = 'mailto:james@godsimij-ai-solutions.com?subject=Technical Documentation Request'}
+            >
+              Request Technical Access
+            </Button>
+          </div>
         </div>
       </div>
     </section>

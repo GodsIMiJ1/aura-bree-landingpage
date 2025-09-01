@@ -151,22 +151,46 @@ export function ContactSection() {
               </div>
             </div>
 
-            {/* Beta Access */}
+            {/* Platform Access */}
             <div className="space-y-4">
-              <h4 className="text-lg font-semibold">Live Beta Access</h4>
+              <h4 className="text-lg font-semibold">Platform Access</h4>
               <div className="space-y-3">
-                <div className="flex items-center gap-3 p-3 rounded-lg bg-card/50 border border-primary/20">
-                  <Building className="h-4 w-4 text-primary" />
-                  <span className="text-sm">Try Live PWA Beta</span>
-                </div>
-                <div className="flex items-center gap-3 p-3 rounded-lg bg-card/50 border border-accent/20">
-                  <Stethoscope className="h-4 w-4 text-accent" />
-                  <span className="text-sm">Clinic Pilot Programs</span>
-                </div>
-                <div className="flex items-center gap-3 p-3 rounded-lg bg-card/50 border border-secondary/20">
-                  <Users className="h-4 w-4 text-secondary-foreground" />
-                  <span className="text-sm">Investment Discussions</span>
-                </div>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="w-full justify-start"
+                  onClick={() => window.open('https://aura-bree.quantum-odyssey.com/', '_blank')}
+                >
+                  <Building className="h-4 w-4 mr-2 text-primary" />
+                  AURA-BREE Client App
+                </Button>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="w-full justify-start"
+                  onClick={() => window.open('https://methaclinic.quantum-odyssey.com/', '_blank')}
+                >
+                  <Stethoscope className="h-4 w-4 mr-2 text-accent" />
+                  MethaClinic Dashboard
+                </Button>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="w-full justify-start"
+                  onClick={() => window.open('https://clinical-canon.quantum-odyssey.com/', '_blank')}
+                >
+                  <Users className="h-4 w-4 mr-2 text-secondary-foreground" />
+                  Clinical Documentation
+                </Button>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="w-full justify-start"
+                  onClick={() => window.open('https://aura-bree-legal-hub.quantum-odyssey.com/', '_blank')}
+                >
+                  <Mail className="h-4 w-4 mr-2 text-muted-foreground" />
+                  Legal & Compliance Hub
+                </Button>
               </div>
             </div>
           </div>

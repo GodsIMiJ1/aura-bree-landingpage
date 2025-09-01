@@ -83,10 +83,10 @@ export function HeroSection() {
                 Schedule Pilot Discussion
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 size="lg"
-                onClick={() => window.open('https://sovereign-aura-bree-aga.netlify.app/', '_blank')}
+                onClick={() => window.open('https://aura-bree.quantum-odyssey.com/', '_blank')}
               >
                 Try Live Beta
               </Button>
